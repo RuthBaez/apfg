@@ -1,0 +1,12 @@
+---
+import Layout from "@layouts/Layout.astro";
+import MBrandG from "@components/MBrandG.astro";
+import Gallery from "@components/gallery/Gallery.astro";
+import Carousel from "@components/gallery/Carousel";
+---
+
+<Layout title="Galería">
+  <MBrandG />
+  <Carousel client:load />
+  <Gallery />
+</Layout>

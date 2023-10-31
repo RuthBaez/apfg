@@ -1,0 +1,36 @@
+---
+const cards = [
+  { title: "Servicios Personalizado", description: "Lavado de tus sneakers personalizado que incluye suela completa, cuerpo exterior, interior, plantillas, pasadores según el tipo de lavado que elijas." },
+  { title: "Materiales de Calidad", description: "Lavado de tus sneakers personalizado que incluye suela completa, cuerpo exterior, interior, plantillas, pasadores según el tipo de lavado que elijas.               " },
+  { title: "Atención Personalizada", description: "Lavado de tus sneakers personalizado que incluye suela completa, cuerpo exterior, interior, plantillas, pasadores según el tipo de lavado que elijas.       " },
+  { title: "Herramientas Profesionales", description: "Lavado de tus sneakers personalizado que incluye suela completa, cuerpo exterior, interior, plantillas, pasadores según el tipo de lavado que elijas." },
+  { title: "Recomendaciones para tu calzado", description: "Lavado de tus sneakers personalizado que incluye suela completa, cuerpo exterior, interior, plantillas, pasadores según el tipo de lavado que elijas.     " },
+  { title: "Entrega en tienda y/o delivery", description: "Lavado de tus sneakers personalizado que incluye suela completa, cuerpo exterior, interior, plantillas, pasadores según el tipo de lavado que elijas. " },
+]
+---
+
+<section class="py-8 m-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28 bg-slate-950">
+  <div class="relative w-full bg-cover bg-center">
+    <div class=" x-fixed top-0 left-0 w-full h-full flex items-center justify-center">
+      <div class="bg-black bg-opacity-50 flex flex-col items-center justify-evenly">
+        <h3 class="font-bebas text-2xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-8xl text-center text-white">
+          Nuestros Cuidados
+        </h3>
+      </div>
+    </div>
+    <div class="flex justify-center pt-3">
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-center">
+        {cards.map((card, index) => (
+          <div key={index} class="relative p-7 sm:p-6 md:p-7 lg:p-12 border rounded-md shadow-md group sm:m-2 md:m-3">
+            <h2 class="text-sm sm:text-lg md:text-2xl lg:text-2xl text-white font-bold text-center m-2 sm:m-4 opacity-100 group-hover:opacity-0 transition-opacity duration-300">{card.title}</h2>
+            <div class="absolute left-0 bottom-0 right-0 lg:font-semibold text-white text-xs sm:text-xs md:text-base lg:text-xl xl:text-xl 2xl:text-2xl rounded-md transition-opacity duration-300 opacity-0 group-hover:opacity-100 bg-gradient-to-b from-red-600 lg:p-4">
+             {card.description}
+            </div>
+          </div>
+        ))}
+      </div>      
+    </div>
+    
+    
+  </div>
+</section>

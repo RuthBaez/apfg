@@ -1,0 +1,20 @@
+---
+import Banner from "@components/home/Banner.astro";
+import Layout from "@layouts/Layout.astro";
+import Carousel from "@components/home/Carousel";
+import HBanner from "@components/home/HBanner.astro";
+import MSocial from "@components/MSocial.astro";
+import News from "@components/home/News";
+import OurServices from "@components/OurServices.astro";
+import AboutUs from "@components/AboutUs.astro";
+---
+
+<Layout title="Home">
+  <HBanner />
+  <AboutUs />
+  <OurServices />
+  <MSocial />
+  <News client:load />
+  <Carousel client:load />
+  <Banner />
+</Layout>

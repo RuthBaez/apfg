@@ -1,0 +1,23 @@
+---
+export interface Props {
+	titleFirstLine: string;
+	titleSecondLine: string;
+	url: string;
+}
+
+const { titleFirstLine, titleSecondLine, url } = Astro.props;
+---
+
+<section>
+  <div class="flex w-full justify-end items-center">
+    <p
+      class="ml-2 -mr-5 lg:ml-20 lg:-mr-20 text-[45px] sm:text-[80px] lg:text-[100px] xl:text-[140px]  2xl:text-[180px] text-white whitespace-nowrap leading-tight font-bebas z-10"
+    >
+      {titleFirstLine}<br />{titleSecondLine}
+    </p>
+    <div
+      class=`w-full max-w-[900px] h-[160px] sm:h-[250px] md:h-[350px] lg:h-[450px] xl:h-[540px] 2xl:h-[600px] ${url} bg-contain bg-center bg-no-repeat shadow-[inset_20px_0_20px_0_rgba(0,0,0,1)] lg:shadow-[inset_30px_0_30px_0_rgba(0,0,0,1)]`
+    >
+    </div>
+  </div>
+</section>

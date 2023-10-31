@@ -1,0 +1,30 @@
+---
+import Icon from "astro-icon";
+---
+
+<section class="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28">
+  <div
+    class="relative w-full pt-[33%] bg-[url('https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/fv7jkqezsl73wv77n9vm')] bg-cover bg-center"
+  >
+    <div
+      class="absolute top-0 left-0 w-full h-full flex items-center justify-center"
+    >
+      <div
+        class="bg-black bg-opacity-50 w-[90%] h-[80%] flex flex-col items-center justify-evenly"
+      >
+        <h3 class="font-bebas text-2xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-8xl text-center text-white">
+          Solicita el rescate de tus sneakers!
+        </h3>
+        <div>
+          <button class="py-1.5 px-3 md:py-2 md:px-4 border border-white rounded-full text-xs md:text-2xl flex" onclick="window.location.href='/precios#request'">
+            <span class="text-white font-inter font-black mr-2">Solicitar</span>
+            <Icon
+              name="tabler:chevron-right"
+              class="w-4 h-4 md:w-8 md:h-8  p-0.5 md:p-1 bg-black rounded-full text-white"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,82 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<div class="w-full px-7 mx-auto text-tahiti pt-10 text-justify bg-[#121212]">
+  <div class="grid gap-x-10 lg:grid-cols-2 p-7">
+    <div class="lg:mb-0 mb-10">
+      <img
+        class="w-15 h-15"
+        src="https://res.cloudinary.com/dkljgkuyy/image/upload/v1692512726/WhatsApp_Image_2023-08-04_at_16.28_2_1_odv13r.png"
+        alt=""
+      />
+      <p class="mt-3 mb-4 text-white">
+        Nos esforzamos por superar tus expectativas en cada servicio
+        que brindamos. Entendemos que cada par de zapatos tiene su propia
+        historia, y tratamos cada pieza con el respeto y cuidado que se merece.
+        <div class="flex">
+          <a
+          target="_blank"
+            href="https://instagram.com/rescuesneaks?igshid=MmIzYWVlNDQ5Yg"
+          >
+            <Icon
+              name="mdi:instagram"
+              class="w-7 h-7 md:w-14 md:h-14 lg:w-17 lg:h-17 text-white"
+            />
+          </a>
+          <a
+          target="_blank"
+            href="https://www.facebook.com/profile.php?id=100071543359421&mibextid=LQQJ4d"
+          >
+            <Icon
+              name="mdi:facebook"
+              class="w-7 h-7 md:w-14 md:h-14 lg:w-17 lg:h-17 text-white"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://wa.me/51984362980"
+          >
+            <Icon
+              name="mdi:whatsapp"
+              class="w-7 h-7 md:w-14 md:h-14 lg:w-17 lg:h-17 text-white"
+            />
+          </a>
+        </div>
+      </p>
+    </div>
+    <div class="grid grid-cols-1 mx-auto">
+      <div class="text-white">
+        <h1 class="mb-3 font-bold text-3xl">Contacto</h1>
+        <p class="flex gap-4 mb-3">
+          Av. 28 de Julio 308 Jesús María 15072, Perú
+        </p>
+        <p class="flex gap-4 mb-3">P: 984 362 980</p>
+        <p class="flex gap-4 mb-3">P: 970 696 049</p>
+        <p class="flex gap-4 mb-3">E: Ibeltran@rescuesneaks.pe</p>
+      </div>
+      <div class="mt-7 lg:mt-0 w-max">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4214054067746!2d-77.04383021187179!3d-12.065138287982686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e840838873%3A0x1d9f6220ed30214f!2sAv.%2028%20de%20Julio%20308%2C%20Jes%C3%BAs%20Mar%C3%ADa%2015072%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spy!4v1677169897153!5m2!1ses-419!2spy"
+          class="w-full h-full"
+          style="border:5px solid #eeeef6;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="text-white">
+    <hr class="text-[#eeeef6] border-[1px]" />
+    <p class="text-center p-10">
+      Copyright © <span id="year">2020</span> <a href="https://iriscompany.io/" class="text-[#ab292d]"
+        >IRIS</a
+      > All Right Reseved
+    </p>
+  </div>
+</div>
+
+<script>
+  const year = document.getElementById("year");
+  if(year) year.textContent = new Date().getFullYear().toString();
+</script>

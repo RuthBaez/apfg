@@ -1,0 +1,65 @@
+---
+import OurServiceCarousel from "./home/OurServiceCarousel";
+const cardsContent = [
+  {
+    img: "https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/image_94_ztmwkp",
+    title: "LAVADO",
+    text: "Lavado de tus sneakers personalizado que incluye suela completa, cuerpo exterior, interior, plantillas, pasadores según el tipo de lavado que elijas.",
+  },
+  {
+    img: "https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/image_95_xfaqor",
+    title: "PINTADO",
+    text: "El pintado en RescueSneaks revive el color original o similar de cada sneakers, el pintado es aplicable a tu calzado o sneaker de cuero, tela o gamuza.",
+  },
+  {
+    img: "https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/image_96_xf85jn",
+    title: "MID SOLE UV",
+    text: "Mid Sole UV es un blanqueamiento que se le da a la media suela cuando se pone amarillo, utilizamos un líquido aclarador una máquina UV por sesiones.",
+  },
+  {
+    img: "https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/image_97_yt8rty",
+    title: "MID SOLE REPAINT",
+    text: "Consta de un pintado de media suela al color que se requiera. La duración es de 6 meses a 1 año aproximadamente dependiendo del cuidado.",
+  },
+  {
+    img: "https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/image_98_dgintx",
+    title: "CAMBIO DE SUELA",
+    text: "Para el cambio de suela debes consultar primero si contamos con la suela del calzado a restaurar a través de nuestros canales de com.",
+  },
+  {
+    img: "https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/image_99_wulfas",
+    title: "PERSONALIZADO",
+    text: "Uno de nuestros servicios favoritos pues le damos un giro total a cada par. Solo nos mandas el diseño para tus pares.",
+  },
+];
+---
+
+<div
+  class="relative bg-[url(https://res.cloudinary.com/dkljgkuyy/image/upload/f_auto,q_auto/v1/astro-rescue/home/IMG_0653_fwic8q)] bg-cover bg-center xl:bg-cover w-full pt-[110vw] sm:pt-[70%] md:pt-[55%] lg:pt-[80%] xl:pt-[60.25%] 2xl:pt-[55%]"
+>
+  <div class="absolute top-0 left-0 w-full h-full flex flex-col-reverse sm:flex-row justify-center">
+    <div
+      class="hidden w-[55rem] lg:grid grid-cols-3 gap-y-12 m-auto"
+    >
+      {
+        cardsContent.map((item, index) => (
+          <div class="relative border-[5px] border-white rounded-3xl h-83 w-60 lg:w-56 xl:w-60 p-5 pt-8 flex flex-col space-y-2 mx-auto">
+            <img src={item.img} alt={item.title} class="w-16 h-16 mx-auto" />
+            <h3 class="font-dm text-center text-white font-bold">
+              {item.title}
+            </h3>
+            <p class="font-dm text-white">{item.text}</p>
+            <div class="absolute -top-2.5 left-1/2 transform -translate-x-1/2 bg-primary-dark w-32 h-2 rounded-b-full"></div>
+            <div class="absolute flex -top-7 left-1/2 transform -translate-x-1/2 border-2 border-primary-dark bg-white rounded-full w-10 h-10 place-content-center place-items-center text-primary-dark font-bold text-xl"> {index + 1} </div>
+          </div>
+        ))
+      }
+    </div>
+    <div class="sm:w-[60%] lg:hidden">
+      <OurServiceCarousel client:load cardsContent={cardsContent} />
+    </div>
+    <div class="lg:w-[30%] xl:w-[35%] 2xl:w-[40%] flex text-center place-items-center place-content-center">
+      <p class="font-antonio text-white text-center text-[8vw]">NUESTROS SERVICIOS</p>
+    </div>
+  </div>
+</div>
