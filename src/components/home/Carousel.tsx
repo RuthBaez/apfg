@@ -9,27 +9,33 @@ interface Testimonial {
 function Carousel() {
   const testimonials = [
     {
-      client: "Kathleen Smith",
+      client: "RESPONSABILIDAD",
       comment:
-        "Son una empresa verdaderamente sería, me gusta la manera en la que trabajan y coordinan los envíos.",
+        "Ofrecemos respuestas precisas ante las circunstancias que nos rodean aplicando nuestra experiencia al servicio. Actuamos de manera consiente lo que nos permite reflexionar, administrar, orientar y valorar las consecuencias de nuestros actos, siempre en un plano moral y profesional.",
       stars: 5,
     },
     {
-      client: "Gabriela Sánchez",
+      client: "PROFESIONALISMO",
       comment:
-        "Honestamente me sorprendió la manera en que revivieron mis sneakers, eso fue muy eficiente, un trabajo excelente.",
+        "Nos regimos por las normas preestablecidas del respeto, la mesura, la objetividad y la efectividad en la actividad que desempeñamos.",
       stars: 5,
     },
     {
-      client: "Ruth Baéz",
+      client: "HONESTIDAD",
       comment:
-        "Me encanta como dejaron mis sneakers, parecían unas nuevas, el antes y después fue hermoso.",
+        "Nuestro respeto a la verdad brinda y refleja nuestra calidad en el servicio, asegura el bienestar y la confianza de nuestros clientes.",
       stars: 5,
     },
     {
-      client: "Patricia Fernandez",
+      client: "LEALTAD",
       comment:
-        "El equipo de esta tienda es increíble, son muy amables y el servicio es personalizado, se nota que saben lo que hacen.",
+        "Cumplimos con nuestros compromisos en la ejecución de nuestros servicios de limpieza. aún frente a circunstancias cambiantes o adversas para garantizar la misma",
+      stars: 5,
+    },
+    {
+      client: "EQUIPO DE TRABAJO",
+      comment:
+        "Fomentamos el trabajo en Equipo, de manera a que cada empleado, sienta el sentido de pertenencia y posesión propia de la empresa, así como el apoyo constante para con sus compañeros.",
       stars: 5,
     },
   ];
@@ -94,7 +100,7 @@ function Carousel() {
                     ))}
                   </div>
                 </div>
-                <div className="absolute bottom-0 left-0 bg-gradient-to-b from-[#B31D1D] via-[#CF7878] to-[#F7F7F7] z-0 opacity-60 w-[85%] h-[90%]"></div>
+                <div className="absolute bottom-0 left-0 bg-gradient-to-b from-[#ff922d] via-[#ff922d] to-[#F7F7F7] z-0 opacity-60 w-[85%] h-[90%]"></div>
               </div>
             </div>
           ))}
@@ -102,7 +108,7 @@ function Carousel() {
       </div>
       <div className="w-[40%] flex flex-col justify-center md:justify-start md:pt-6 space-y-2 xl:space-y-8 text-center">
         <p className="font-bebas text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] text-white">
-          ¿QUÉ OPINAN NUESTROS CLIENTES?
+          NUESTROS VALORES
         </p>
         <div className="flex justify-center space-x-2 xl:space-x-8">
           <button onClick={previous}>

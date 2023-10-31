@@ -3,9 +3,9 @@ import Icon from "astro-icon";
 ---
 
 <nav>
-  <div class="container mx-auto flex items-center justify-between">
+  <div class="container mx-auto flex items-center justify-between py-2">
     <a href="/" class="flex w-[32%] items-center justify-start">
-      <img src="https://res.cloudinary.com/de5c9p8wb/image/upload/v1692713471/logorescue_ldz3cp.png" alt="Logo de la empresa">
+      <img src="https://res.cloudinary.com/de5c9p8wb/image/upload/f_auto,q_auto/logoapnfgTEST2_d50zaa" alt="Logo de la empresa">
     </a>
                 
     <div class="lg:hidden mr-8">
@@ -16,27 +16,12 @@ import Icon from "astro-icon";
       </button>
     </div>   
 
-    <ul class="hidden lg:flex space-x-[3vw]">
+    <ul class="hidden lg:flex space-x-[8vw]">
       <li><a href="/" class="text-white text-2xl hover:underline hover:text-red-500">Inicio</i></a></li>
-      <li><a href="/procedimiento" class="text-white text-2xl hover:underline hover:text-red-500">Procedimientos</a></li>
-      <li><a href="/galeria" class="text-white text-2xl hover:underline hover:text-red-500">Galería</a></li>
-      <li><a href="/precios" class="text-white text-2xl hover:underline hover:text-red-500">Precios</a></li>
+      <li><a href="#nosotros" class="text-white text-2xl hover:underline hover:text-red-500">Nosotros</a></li>
+      <li><a href="#servicios" class="text-white text-2xl hover:underline hover:text-red-500">Servicios</a></li>
+      <li><a href="#contacto" class="text-white text-2xl hover:underline hover:text-red-500">Contactos</a></li>
     </ul>
-    
-    <div class="lg:flex space-x-4 hidden mr-8 xl:mx-0">
-      <a target="_blank" href="https://www.facebook.com/profile.php?id=100071543359421&mibextid=LQQJ4d" class="text-white flex items-center">
-        <Icon
-          name="mdi:facebook"
-          class="w-6 h-6 lg:w-12 lg:h-12 p-1 bg-black rounded-full text-white"
-        />
-      </a>
-      <a target="_blank" href="https://instagram.com/rescuesneaks" class="text-white flex items-center">
-        <Icon
-          name="mdi:instagram"
-          class="w-6 h-6 lg:w-12 lg:h-12 p-1 bg-black rounded-full text-white"
-        />
-      </a>
-    </div>      
   </div>
   
 </nav>
@@ -45,9 +30,9 @@ import Icon from "astro-icon";
 <div id="mobile-menu" class="hidden lg:hidden bg-black text-gray-500">
   <ul class="py-4 px-6 space-y-4">
     <li><a href="/" class="block text-lg hover:underline hover:text-red-500">Inicio</a></li>
-    <li class="border-t border-red-500 pt-4"><a href="/procedimiento" class="block text-lg hover:underline hover:text-red-500">Procedimientos</a></li>
-    <li class="border-t border-red-500 pt-4"><a href="/galeria" class="block text-lg hover:underline hover:text-red-500">Galería</a></li>
-    <li class="border-t border-red-500 pt-4"><a href="/precios" class="block text-lg hover:underline hover:text-red-500">Precios</a></li>
+    <li class="border-t border-red-500 pt-4"><a href="#nosotros" class="block text-lg hover:underline hover:text-red-500">Nosotros</a></li>
+    <li class="border-t border-red-500 pt-4"><a href="#servicios" class="block text-lg hover:underline hover:text-red-500">Servicios</a></li>
+    <li class="border-t border-red-500 pt-4"><a href="#contacto" class="block text-lg hover:underline hover:text-red-500">Contactos</a></li>
     <li class="border-t border-red-500 pt-4"><a href="#" class="block text-lg hover:underline hover:text-red-500"></a></li>
   </ul>
 </div>

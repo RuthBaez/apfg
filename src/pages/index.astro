@@ -3,18 +3,18 @@ import Banner from "@components/home/Banner.astro";
 import Layout from "@layouts/Layout.astro";
 import Carousel from "@components/home/Carousel";
 import HBanner from "@components/home/HBanner.astro";
-import MSocial from "@components/MSocial.astro";
 import News from "@components/home/News";
 import OurServices from "@components/OurServices.astro";
 import AboutUs from "@components/AboutUs.astro";
+import Politica from "@components/home/Politica.astro";
 ---
 
 <Layout title="Home">
   <HBanner />
   <AboutUs />
-  <OurServices />
-  <MSocial />
   <News client:load />
+  <Politica />
   <Carousel client:load />
+  <OurServices />
   <Banner />
 </Layout>
